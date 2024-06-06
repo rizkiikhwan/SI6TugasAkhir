@@ -1,0 +1,340 @@
+body {
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+/*navbar style*/
+
+.navbar {
+    z-index: 3;
+}
+
+/*Navbar Color*/
+.nav-color {
+    background-color: #2E5083;
+}
+
+*{
+    z-index: 2;
+}
+.navbar-brand{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav-link{
+    font-size: 16px;
+}
+
+.nav-link.active{
+    font-weight: 700;
+}
+/* Hero section */
+#hero{
+    background: linear-gradient(64deg, #ffffff,#2E5083);
+    height: 100vh;
+    width: 100%;
+}
+
+.img-hero{
+    height: 80%;
+}
+
+.hero-tagline h4{
+    color: #032353;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.hero-tagline h1{
+    color: #032353;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+.hero-tagline p {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    line-height: 27px;
+    width: 90%;
+}
+
+.button-lg-primary {
+    width: 204px;
+    height: 51px;
+    background-color: #032353;
+    color: #FFFDFD;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/*Diagnosis*/
+#layanan{
+    padding: 100px 0;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(#032353)
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(#032353)
+}
+.sub-title {
+    font-size: 2px;
+    color: #000000;
+}
+
+.card-layanan{
+    width: 100%;
+    height: 313px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+    transition: all .1s ease-in;
+}
+
+.circle-icon{
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 50%;
+
+    transition: all .1s ease-in;
+}
+
+.card-layanan h3 {
+    color: #032353;
+    font-size: 24px;
+
+    transition: all .2s ease-in;
+}
+
+.card-layanan p {
+    color: #000000;
+    font-size: 14px;
+
+    transition: all .3s ease-in;}
+
+/*Hover*/
+
+.card-layanan:hover {
+    width: 100%;
+    height: 313px;
+    border-radius: 5px;
+    background: linear-gradient(64deg, #ffffff,#2E5083);
+    padding: 40px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+}
+
+.card-layanan:hover .circle-icon {
+    background-color: #fff;
+    transition: all .2s ease-in;
+
+}
+
+.card-layanan:hover h3 {
+    color: #000000;
+    font-size: 24px;
+    transition: all .2s ease-in;
+}
+
+.card-layanan:hover p {
+    color: #000000;
+    font-size: 14px;
+    transition: all .2s ease-in;
+}
+
+/*CEK*/
+
+#cek {
+    background-image: url(../Assets/img/Superb\ Benefits\ of\ Eating\ Pomegranate\ -\ Nutrabay\ Magazine.jpg);
+    margin-top: 158px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cek .overlay {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#cek .container {
+    padding: 148px 0 148px 0;
+}
+
+
+#cek h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+.kontak a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+.card-hasil {
+    width: 327px;
+    height: 229px;
+    background: #CBC4C4;
+    border-radius: 5px;
+    padding: 40px 5px;
+    margin: 0 auto;
+    display: block;
+
+  }
+  .card-hasil img {
+    max-width: 100%; /* Ensures image doesn't overflow card */
+    max-height: 100%; /* Adjust based on desired aspect ratio if needed */
+    object-fit: cover; /* Scales image to fit card, maintaining aspect ratio */
+  }
+
+
+.button-unggah {
+    width: 204px;
+    height: 51px;
+    background-color: #032353;
+    color: #FFFDFD;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.button-diagnosa {
+    width: 204px;
+    height: 51px;
+    background-color: #032353;
+    color: #FFFDFD;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.button-hasil {
+    width: 204px;
+    height: 51px;
+    background-color: #032353;
+    color: #FFFDFD;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/*Bantuan*/
+
+#bantuan {
+    background-image: url(../Assets/img/Superb\ Benefits\ of\ Eating\ Pomegranate\ -\ Nutrabay\ Magazine.jpg);
+    margin-top: 158px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#bantuan .overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#bantuan .container {
+    padding: 148px 0 148px 0;
+}
+
+
+#bantuan h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.MRI h5 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+
+}
+
+#bantuan h6 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin: 19px 0 14px 0;
+}
+
+.kontak a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+.IRIS {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.card-contact {
+    width: 100%;
+    height: 445px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 80px 50px;
+}
+
+footer {
+    width: 100%;
+    height: 270px;
+    background: #000000;
+}
+
+.copyright {
+    bottom: 1%;
+    color: #fff;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+
+}
+
+footer a {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+}

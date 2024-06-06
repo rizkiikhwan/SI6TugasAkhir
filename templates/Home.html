@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!--Font Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<!-- My Style -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+<!-- Responsive -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+<!-- LogoTiitle -->
+<link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}"
+type="image/x-icon">
+
+    <title>IRIS</title>
+  </head>
+  <body>
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-fixed w-100">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="{{ url_for('static', filename='images/stechoq-logo.png') }}" alt="" width="70" height="24" class="d-inline-block align-text-top me-2">
+            IRIS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#layanan">INFORMASI</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#bantuan">BANTUAN</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#">PREDIKSI</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<!-- Hero Section -->
+<section id="hero">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-md-6 hero-tagline my-auto">
+                <h4>Diagnosis Tumor Otak</h4>
+                <h1>Apa Itu Tumor Otak ?</h1>
+            <p><span class="fw-bold">Tumor Otak</span> adalah pertumbuhan abnormal di dalam otak yang terjadi ketika sel membelah diri dalam otak yang terjadi ketika sel membelah diri secara tidak terkendali.Tumor otak dapat menimbulkan gejala seperti sakit kepala, gangguan saraf, kejang,perilaku yang berubah, mual dan muntah tanpa alasan,
+            keseimbangan terganggu, dan sakit kepala yang semakin parah.</p>
+
+
+            <a href="#cek"><button class="button-lg-primary">CEK DISINI</button></a>
+            </div>
+        </div>
+
+        <img src="{{ url_for('static', filename='images/LogoIRIS.svg') }}" alt="" class="position-absolute end-0 bottom-0 img-hero">
+
+    </div>
+</section>
+
+<!-- Informasi -->
+<section id="layanan">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2> Jenis Tumor Otak </h2>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-4 text-center">
+        <div class="card-layanan">
+          <div class="circle-icon position-relative mx-auto">
+            <img src="{{ url_for('static', filename='images/piti.png') }}" alt="" class="position-absolute top-50 start-50 translate-middle">
+          </div>
+          <h3 class="mt-2">Pituitari Tumor</h3>
+          <P class="mt-1">Tumor otak bermula pada kelenjar pituitari,bagian otak yang berfungsi mengatur produces hormon. Tumor ini dapat bersifat jinak atau ganas dan dapat menimbulkan gejala sakitkepala, gangguan penglihatan, dan perubahan hormon.</P>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <div class="card-layanan">
+          <div class="circle-icon position-relative mx-auto">
+            <img src="{{ url_for('static', filename='images/Maskgroup.png') }}" alt="" class="position-absolute top-50 start-50 translate-middle">
+          </div>
+          <h3 class="mt-2">Giloma Tumor</h3>
+          <P class="mt-1">Tumor otak yang bermula pada sel glial, yaitu sel yang menghubungkan sel saraf pada otak. Glioma dapat bersifat jinak atau ganas dan dapat menimbulkan gejala seperti sakit kepala, kejang, dan
+            gangguan keseimbangan.
+            </P>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <div class="card-layanan">
+          <div class="circle-icon position-relative mx-auto">
+            <img src="{{ url_for('static', filename='images/ening.png') }}" alt="" class="position-absolute top-50 start-50 translate-middle">
+          </div>
+          <h3 class="mt-2">Meningioma Tumor</h3>
+          <P class="mt-1">Tumor otak yang terjadi pada meninges, yaitu lapisan jaringan yang mengelilingi bagian luar otak dan sumsum tulang belakang. Meningioma bersifat jinak dan tumbuh perlahan. Gejala dapat berupa sakit kepala, gangguan penglihatan, dan kejang.
+            </P>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--Bantuan-->
+<section id="bantuan">
+  <div class="container-fluid overlay h-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+             <h2>Cek Tumor Otak dengan MRI dan machine learning</h2>
+             <div class="MRI">
+              <h5>Kini, dengan teknologi MRI yang canggih dan algoritma machine learning yang akurat, diagnosis tumor otak telah menjadi lebih mudah dan efektif. Dengan hanya beberapa klik, Anda dapat mendapatkan hasil diagnosa yang akurat dan cepat, membantu Anda dalam membuat keputusan medis yang tepat untuk pasien Anda.</h5>
+             </div>
+             <div class="kontak">
+              <h6>Kontak</h6>
+              <div class="mb-3">
+                <img src="{{ url_for('static', filename='images/telephone.png') }}" alt="">
+                <a href="#">022-3453-3211-2345</a>
+              </div>
+              <div class="mb-3">
+                <img src="{{ url_for('static', filename='images/EmailIcon.png') }}" alt="">
+                <a href="#">iris@gmail.com</a>
+              </div>
+             </div>
+             <h6>Social Media</h6>
+             <a href="#" class="me-2"><img src="{{ url_for('static', filename='images/FacebookIcon.png') }}"
+             alt=""></a>
+             <a href="#" class=me-2><img src="{{ url_for('static', filename='images/InstagramIcon.png') }}"
+              alt=""></a>
+             <a href="#" class="me-2"><img src="{{ url_for('static', filename='images/TwitterIcon.png') }}"
+              alt=""></a>
+            <a href="#" class="IRIS">IRIS</a>
+        </div>
+        <div class="col-md-6">
+          <div class="card-contact w-100">
+            <p><span class="fw-bold">Upload MRI :</span>Silakan upload citra MRI Anda ke dalam sistem kami,dengan cara klik tombol cek disini pada menu HOME. Pastikan Anda memilih citra yang paling akurat dan terbaru.</p>
+            <p><span class="fw-bold">Pengujian :</span>Sistem kami akan melakukan pengujian pada citra MRI Anda menggunakan algoritma machine learning yang telah dikembangkan. Hasil pengujian akan menunjukkan kemungkinan adanya tumor otak.</p>
+            <p><span class="fw-bold">Hasil Diagnosa :</span>Hasil diagnosa akan disajikan sesuai dengan jenis tumor otak yang terdeteksi.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="d-flex align-items-center position-relative">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 d-flex align-items-center">
+          <img src="{{ url_for('static', filename='images/logo.png') }}" alt="">
+          <a href="#" class="ms-3">IRIS</a>
+        </div>
+        <div class="col-md-5 d-flex justify-content-evenly">
+          <a href="#hero">Beranda</a>
+          <a href="#layanan">Informasi</a>
+          <a href="#bantuan">Bantuan</a>
+        </div>
+      </div>
+      <div class="row position-absolute copyright start-50 translate-middle">
+        <div class="col-12">
+          <p>Copyright kelompok 2B AI All Right Reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="{{ url_for('static', filename='javascript/script.js') }}"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></scrip>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+  </body>
+</html>
